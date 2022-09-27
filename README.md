@@ -17,15 +17,15 @@ Décompresser et copier les contenu de fichier **zip** dans un nouvau dossier : 
 
 Executer le fichier **Composer-Setup.exe**
 
-<img src="_img/001.png" max-with="300px"/>
+![img](_img/001.png)
 
 Choisissez votre choix d'installation.
 
-<img src="_img/002.png" max-with="300px"/>
+![img](_img/002.png)
 
 Choisissez le mode **developper** si vous voulez plus 😉 (j'ai pas test encore, déso 😁).
 
-<img src="_img/003.png" max-with="330px"/>
+![img](_img/003.png" max-with="330px"/>
 
 Normalement, l'installeur de composer détecte de lui-même l'installation de php. Si ce n'est pas le cas, choisissez le dossier en question ou réinstaller PHP.
 
@@ -33,15 +33,15 @@ De plus, si cela n'est pas le cas, Composer vous propose d'ajouter PHP à votre 
 
 Cela vous permettra d'accéder à Php via une console.
 
-<img src="_img/004.png" max-with="300px"/>
+![img](_img/004.png)
 
 Non testé 🤷‍♂️😜.
 
-<img src="_img/005.png" max-with="300px"/>
+![img](_img/005.png)
 
 Lance maintenant l'installation.
 
-<img src="_img/006.png" max-with="300px"/>
+![img](_img/006.png)
 
 Voilà, c'est finis. 💪
 
@@ -72,21 +72,21 @@ Une fois le serveur HTTP lancer, aller sur [http://localhost:8080](http://localh
 
 Voici une apperçu :
 
-<img src="_img/007.png" max-with="300px"/>
+![img](_img/007.png)
 
 - Sélectionné toute la page avec : `CTRL` + `A`
 
-<img src="_img/008.png" max-with="300px"/>
+![img](_img/008.png)
 
 - Copier toute la page avec : `CTRL` + `C`
 
 - Aller sur [https://xdebug.org/wizard](https://xdebug.org/wizard)
 
-<img src="_img/009.png" max-with="300px"/>
+![img](_img/009.png)
 
 - Coller toute la page avec : `CTRL` + `V`
 
-<img src="_img/010.png" max-with="300px"/>
+![img](_img/010.png)
 
 - Suiver ensuite les instructions afficher.
 
@@ -98,23 +98,23 @@ Dans l'exemple :
   3. Mettez à jour `C:\wamp64\bin\php\php7.4.26\php.ini` et ajouté la ligne : `zend_extension = xdebug`
   4. Redémarrer le serveur HTTP intégré de PHP : `php -S localhost:8080`
 
-<img src="_img/011.png" max-with="300px"/>
+![img](_img/011.png)
 
 - Fichier téléchargé.
 
-<img src="_img/012.png" max-with="300px"/>
+![img](_img/012.png)
 
 - Fichier renommé et déplacé.
 
-<img src="_img/013.png" max-with="300px"/>
+![img](_img/013.png)
 
 - Ligne ajouté.
 
 - Accès : [http://localhost:8080](http://localhost:8080)
 
-<img src="_img/014.png" max-with="300px"/>
+![img](_img/014.png)
 
-<img src="_img/015.png" max-with="300px"/>
+![img](_img/015.png)
 
 Voilà, Xdebug est installé. 😎💪
 
@@ -133,7 +133,7 @@ Si Php est bien installé, voici que votre console afficher :
 > php -v
 ```
 
-Si PHP sans Xdebug
+Si PHP est installé sans Xdebug
 
 ```
 PHP 8.1.10 (cli) (built: Aug 30 2022 18:05:49) (ZTS Visual C++ 2019 x64)
@@ -141,7 +141,7 @@ Copyright (c) The PHP Group
 Zend Engine v4.1.10, Copyright (c) Zend Technologies
 ```
 
-Si PHP avec Xdebug
+Si PHP est installé avec Xdebug
 
 ```
 PHP 7.4.26 (cli) (built: Nov 16 2021 18:15:31) ( ZTS Visual C++ 2017 x64 )
