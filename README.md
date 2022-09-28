@@ -1,4 +1,4 @@
-# Installation de PHP 8.1, Composer & Xdebug sur Windows
+# Installation de PHP 8.1, Composer, Xdebug et OPcache sur Windows
 
 Ceci est une petit guide pour installer PHP et Composer sur Windows.
 
@@ -118,6 +118,29 @@ Dans l'exemple :
 
 Voilà, Xdebug est installé. 😎💪
 
+## 5 - Activer OPcache
+
+Rechercher `zend_extension` et si il y a un `;` devant `zend_extension=xdebug`, retirer le.
+
+Vous dévrier obtenir cela :
+
+![img](_img/016.png)
+
+Activer en retirnant les `;` aux lignes :
+
+```
+opcache.memory_consumption=128
+opcache.interned_strings_buffer=8
+opcache.max_accelerated_files=4000
+opcache.revalidate_freq=60
+opcache.fast_shutdown=1
+opcache.enable_cli=1
+```
+
+![img](_img/017.png)
+
+Voilàa, OPcache est activer 😉.
+
 ## 5 - Vérifier l'installation de PHP 8.1 et Composer
 
 Ouvrer une console et effectuer les commandes suivantes :
@@ -133,7 +156,7 @@ Si Php est bien installé, voici que votre console afficher :
 > php -v
 ```
 
-Si PHP est installé sans Xdebug
+Si PHP est installé sans Xdebug et OPcache
 
 ```
 PHP 8.1.10 (cli) (built: Aug 30 2022 18:05:49) (ZTS Visual C++ 2019 x64)
@@ -141,13 +164,23 @@ Copyright (c) The PHP Group
 Zend Engine v4.1.10, Copyright (c) Zend Technologies
 ```
 
-Si PHP est installé avec Xdebug
+Si PHP est installé avec Xdebug et sans OPcache
 
 ```
 PHP 7.4.26 (cli) (built: Nov 16 2021 18:15:31) ( ZTS Visual C++ 2017 x64 )
 Copyright (c) The PHP Group
 Zend Engine v3.4.0, Copyright (c) Zend Technologies
     with Xdebug v3.1.5, Copyright (c) 2002-2022, by Derick Rethans
+```
+
+Si PHP est installé avec Xdebug et OPcache
+
+```
+PHP 8.1.10 (cli) (built: Aug 30 2022 18:05:49) (ZTS Visual C++ 2019 x64)
+Copyright (c) The PHP Group
+Zend Engine v4.1.10, Copyright (c) Zend Technologies
+    with Xdebug v3.1.5, Copyright (c) 2002-2022, by Derick Rethans
+    with Zend OPcache v8.1.10, Copyright (c), by Zend Technologies
 ```
 
 ### 5.2 - Composer
